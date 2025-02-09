@@ -2,14 +2,18 @@
   "name": "conference_app",
   "private": true,
   "version": "0.0.0",
+  "homepage":"https://github.com/Muhammadwaseemgtk/budgetEase-conference-app.git",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
